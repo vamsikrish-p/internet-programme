@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transition and Transform Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+            background-color: #f4f4f4;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: steelblue;
+            color: white;
+            line-height: 150px;
+            margin: auto;
+            border-radius: 10px;
+            transition: all 0.5s ease;
+        }
+
+        .box:hover {
+            background-color: orange;
+            transform: rotate(15deg) scale(1.2);
+        }
+    </style>
+</head>
+<body>
+
+<h2>Transition and Transform Example</h2>
+
+<div class="box">Hover Me</div>
+
+</body>
+</html>
+
+
+
