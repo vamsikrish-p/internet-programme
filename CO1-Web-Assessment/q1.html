@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Question 1</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Question 1</h1>
+
+<p>HTTP Response Analysis</p>
+
+</header>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+</nav>
+
+<div class="container">
+
+<div class="question">
+
+<h2>HTTP Header</h2>
+
+<pre>
+HTTP/1.1 200 OK
+Date: Mon, 01 Apr 2026 10:00:00 GMT
+Content-Type: text/html
+Content-Length: -150
+Connection: keep-alive
+</pre>
+
+<h3>Answer</h3>
+
+<ul>
+
+<li>Content-Length is invalid because it cannot be negative.</li>
+
+<li>A negative Content-Length causes browsers to misread response size.</li>
+
+<li>Status code 200 OK does not fully match because the response header is malformed.</li>
+
+<li>Correct Content-Length should be a positive value such as 150.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</body>
+</html>
