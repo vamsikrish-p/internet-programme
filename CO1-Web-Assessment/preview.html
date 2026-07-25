@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web Development Standards Implementation</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:#f2f5f9;
+line-height:1.6;
+}
+
+header{
+background:#003366;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+nav{
+background:#0055aa;
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+position:sticky;
+top:0;
+}
+
+nav a{
+color:white;
+padding:15px 20px;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+background:#003366;
+}
+
+.container{
+width:90%;
+margin:auto;
+padding:20px;
+}
+
+section{
+background:white;
+margin:30px 0;
+padding:25px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,.15);
+}
+
+h2{
+color:#003366;
+margin-bottom:15px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:15px;
+margin-bottom:20px;
+}
+
+table,th,td{
+border:1px solid gray;
+}
+
+th{
+background:#0055aa;
+color:white;
+}
+
+th,td{
+padding:10px;
+text-align:left;
+}
+
+.correct{
+color:green;
+font-weight:bold;
+}
+
+.wrong{
+color:red;
+}
+
+pre{
+background:#eeeeee;
+padding:15px;
+overflow:auto;
+}
+
+button{
+padding:12px 25px;
+background:#003366;
+color:white;
+border:none;
+cursor:pointer;
+border-radius:5px;
+margin-top:20px;
+}
+
+button:hover{
+background:#0055aa;
+}
+
+footer{
+background:#003366;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:30px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Web Development Standards Implementation</h1>
+
+<h3>Internet Programming (CO-1)</h3>
+
+<p>Develop well-structured, standards-compliant web pages using HTML/XHTML and XML and apply Internet protocols and HTTP communication mechanisms.</p>
+
+</header>
+
+<nav>
+
+<a href="#q1">Video</a>
+
+<a href="#q2">HTTP</a>
+
+<a href="#q3">Navigation</a>
+
+<a href="#q4">XML</a>
+
+<a href="#q5">Protocol</a>
+
+</nav>
+
+<div class="container">
+
+<section>
+
+<h2>Scenario</h2>
+
+<p>
+
+A startup is developing a modern web application. During development, the team encounters issues related to HTML elements, HTTP methods, semantic HTML, XML syntax, and communication protocols. The following analysis provides the correct implementation according to web standards.
+
+</p>
+
+</section>
+
+<!-- QUESTION 1 -->
+
+<section id="q1">
+
+<h2>Question 1 : Video Embedding</h2>
+
+<table>
+
+<tr>
+
+<th>Option</th>
+
+<th>Code</th>
+
+<th>Status</th>
+
+</tr>
+
+<tr>
+
+<td>A</td>
+
+<td>&lt;media src="video.mp4"&gt;&lt;/media&gt;</td>
+
+<td class="wrong">Invalid</td>
+
+</tr>
+
+<tr>
+
+<td>B</td>
+
+<td>&lt;video src="video.mp4" controls&gt;&lt;/video&gt;</td>
+
+<td class="correct">Correct</td>
+
+</tr>
+
+<tr>
+
+<td>C</td>
+
+<td>&lt;movie&gt;</td>
+
+<td class="wrong">Invalid</td>
+
+</tr>
+
+<tr>
+
+<td>D</td>
+
+<td>&lt;vid&gt;</td>
+
+<td class="wrong">Invalid</td>
+
+</tr>
+
+</table>
+
+<h3>Answer</h3>
+
+<ul>
+
+<li>The correct HTML element is <b>&lt;video&gt;</b>.</li>
+
+<li>It is an HTML5 standard element for embedding videos.</li>
+
+<li>The <b>controls</b> attribute provides Play, Pause, Volume, and Fullscreen controls.</li>
+
+<li>Other tags are not valid HTML elements.</li>
+
+</ul>
+
+</section>
+
+<!-- QUESTION 2 -->
+
+<section id="q2">
+
+<h2>Question 2 : Registration Form Submission</h2>
+
+<table>
+
+<tr>
+
+<th>Method</th>
+
+<th>Purpose</th>
+
+</tr>
+
+<tr>
+
+<td>GET</td>
+
+<td>Retrieve data</td>
+
+</tr>
+
+<tr>
+
+<td class="correct">POST</td>
+
+<td>Create or submit data securely</td>
+
+</tr>
+
+<tr>
+
+<td>PUT</td>
+
+<td>Update existing resource</td>
+
+</tr>
+
+<tr>
+
+<td>DELETE</td>
+
+<td>Delete resource</td>
+
+</tr>
+
+</table>
+
+<h3>Answer</h3>
+
+<ul>
+
+<li>POST sends data inside the request body.</li>
+
+<li>User information is not visible in the URL.</li>
+
+<li>POST supports large amounts of data.</li>
+
+<li>Registration forms should always use POST with HTTPS.</li>
+
+</ul>
+
+</section>
+
+<!-- QUESTION 3 -->
+
+<section id="q3">
+
+<h2>Question 3 : Semantic Navigation</h2>
+
+<table>
+
+<tr>
+
+<th>Option</th>
+
+<th>Status</th>
+
+</tr>
+
+<tr>
+
+<td>&lt;div&gt;</td>
+
+<td>Generic Container</td>
+
+</tr>
+
+<tr>
+
+<td class="correct">&lt;nav&gt;</td>
+
+<td>Correct Navigation Element</td>
+
+</tr>
+
+<tr>
+
+<td>&lt;section&gt;</td>
+
+<td>Content Section</td>
+
+</tr>
+
+<tr>
+
+<td>&lt;header&gt;</td>
+
+<td>Header Area</td>
+
+</tr>
+
+</table>
+
+<h3>Answer</h3>
+
+<ul>
+
+<li><b>&lt;nav&gt;</b> represents navigation links.</li>
+
+<li>Improves accessibility for screen readers.</li>
+
+<li>Helps search engines understand page structure.</li>
+
+<li>Follows semantic HTML5 standards.</li>
+
+</ul>
+
+</section>
+
+<!-- QUESTION 4 -->
+
+<section id="q4">
+
+<h2>Question 4 : XML Syntax</h2>
+
+<table>
+
+<tr>
+
+<th>Option</th>
+
+<th>Status</th>
+
+</tr>
+
+<tr>
+
+<td>A</td>
+
+<td>Root element not closed</td>
+
+</tr>
+
+<tr>
+
+<td class="correct">B</td>
+
+<td>Valid XML</td>
+
+</tr>
+
+<tr>
+
+<td>C</td>
+
+<td>Mismatched tags</td>
+
+</tr>
+
+<tr>
+
+<td>D</td>
+
+<td>Closing tag incomplete</td>
+
+</tr>
+
+</table>
+
+<h3>Correct XML</h3>
+
+<pre>
+&lt;note&gt;
+    &lt;to&gt;User&lt;/to&gt;
+    &lt;from&gt;Admin&lt;/from&gt;
+&lt;/note&gt;
+</pre>
+
+<h3>Explanation</h3>
+
+<ul>
+
+<li>Every XML tag must have a matching closing tag.</li>
+
+<li>Tags must be properly nested.</li>
+
+<li>XML is case-sensitive.</li>
+
+<li>All opening tags require corresponding closing tags.</li>
+
+</ul>
+
+</section>
+
+<!-- QUESTION 5 -->
+
+<section id="q5">
+
+<h2>Question 5 : Web Communication Protocol</h2>
+
+<table>
+
+<tr>
+
+<th>Protocol</th>
+
+<th>Purpose</th>
+
+</tr>
+
+<tr>
+
+<td>FTP</td>
+
+<td>File Transfer</td>
+
+</tr>
+
+<tr>
+
+<td class="correct">HTTP / HTTPS</td>
+
+<td>Web Communication</td>
+
+</tr>
+
+<tr>
+
+<td>SMTP</td>
+
+<td>Email Transfer</td>
+
+</tr>
+
+<tr>
+
+<td>SNMP</td>
+
+<td>Network Management</td>
+
+</tr>
+
+</table>
+
+<h3>Answer</h3>
+
+<ul>
+
+<li>HTTP is the standard protocol for communication between web browsers and servers.</li>
+
+<li>HTTPS encrypts data using TLS/SSL.</li>
+
+<li>FTP transfers files only.</li>
+
+<li>SMTP is used for email.</li>
+
+<li>SNMP monitors network devices.</li>
+
+</ul>
+
+</section>
+
+<section>
+
+<h2>Conclusion</h2>
+
+<p>
+
+Modern web applications should use HTML5 semantic elements, POST with HTTPS for secure forms, valid XML syntax, and HTTP/HTTPS for browser-server communication. Following web standards improves security, accessibility, maintainability, and compatibility across browsers.
+
+</p>
+
+<button onclick="window.print()">Print Report</button>
+
+</section>
+
+</div>
+
+<footer>
+
+<h3>Internet Programming Assignment</h3>
+
+<p>CO-1: Web Development Standards Implementation</p>
+
+</footer>
+
+<script>
+
+document.querySelectorAll("nav a").forEach(link=>{
+
+link.addEventListener("click",function(){
+
+document.querySelectorAll("nav a").forEach(x=>x.style.background="");
+
+this.style.background="#003366";
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
